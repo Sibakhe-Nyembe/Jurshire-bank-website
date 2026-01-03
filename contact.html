@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    <title>Jurshire | Contact</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.jpg"></a>
+            <div class="nav-links" id="nav-links">
+               <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-list" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Contact us</h1>
+        </div>
+    </section>
+
+    <section class="location">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57221.50269267841!2d31.137185099999996!3d-26.315360899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee8cee147320f07%3A0x7abf98f27ae1dd9f!2sMbabane%2C%20Eswatini!5e0!3m2!1sen!2s!4v1767422085399!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ road, abc building</h5>
+                        <p>Eswatini, Mbabane, Hhohho region</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>Call us | +268 78118912</h5>
+                        <p>Monday to Friday, from 9am till 2pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>How about emailing us?</h5>
+                        <p>Email us here | <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+                    </span>
+                </div>
+            </div>
+             <div class="contact-col">
+                <h3>Share your message</h3>
+                <form actions="form-handler.php" method="post">
+                    <input type="text" placeholder="Enter name" name="name" required>
+                    <input type="email" placeholder="enter email" name="email"required>
+                    <textarea rows="5" placeholder="What's your message?" name="message"></textarea>
+                    <button class="red-btn" type="submit">Send comment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+<footer>
+    <h1>About us</h1>
+    <h2>Looking for help?</h2>
+    <p style="padding: 20px;">Send a message to this email  <a href="mailto:example@gmail.com" class="red-btn">Here</a></p><br>
+    <p>Directly call us  <a href="tel:78118912" class="red-btn">Here</a></p> 
+</footer>
+
+    <script>
+        var navLinks = document.getElementById("nav-links");
+  
+        function showMenu(){
+            navLinks.style.right="0px";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
